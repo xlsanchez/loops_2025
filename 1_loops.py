@@ -41,7 +41,13 @@ for number in list1000:
         continue 
     print(number)
 
-
+applicants_for_credit = ["Alice", "Bob", "Charlie", "David", "Eve"]
+credit_scores = [720,680,590,610,750]  
+for applicant, score in zip (applicants_for_credit , credit_scores):
+    if score < 600:
+         continue 
+    print(applicant + " approved for credit with score: " + str(score))
+    
 
 
 
